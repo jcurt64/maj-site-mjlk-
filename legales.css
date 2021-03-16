@@ -1,0 +1,656 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow-x:hidden; */
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x:hidden; 
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+    scroll-behavior: auto;
+    }
+}
+
+body {
+    /* margin: 0;
+    padding: 0; */
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    overflow-x:hidden; 
+    background-color: rgb(10, 45, 114);
+}
+
+.majelink__banner2 {
+    color: whitesmoke;
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+}
+
+.majelink-title {
+    margin: 0;
+    color: gray;
+    letter-spacing: 1.5px;
+}
+
+.top-container {
+    width: 100%;
+}
+
+.navigation__part1 {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.navigation__part2 {
+    flex-basis: 85%;
+    margin: auto;
+}
+
+#navigation__menu {
+    display: flex;
+    position: fixed;
+    /* background: linear-gradient(rgba(108, 207, 238, 0.5) 0%, rgba(76, 127, 228, 0.5) 100%); */
+    top: 0;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transition: background 0.4s;
+}
+
+.navigation__menu {
+   /* METTRE LE BACKGROUND COLOR POUR LE SCROLL */
+}
+
+.bcg-scrollHeader {
+    background: rgba(41, 52, 73, 0.9);   
+}
+
+.menu-link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 25px; */
+    margin-right: 85px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    /* color: white; */
+}
+
+.navigation__logo {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.item-link {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.item-link:hover {
+    color: rgb(184, 68, 54);
+    
+}
+
+/* .navigation__logo {
+    display: flex;  
+} */
+
+
+.navigation__item {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton-nav {
+    display: flex;
+}
+
+/* DESIGN ITEM MENU*/
+.logo__majelink-1 {
+    width: 55px;
+    height: 45px; 
+    margin-left: 75px; 
+    margin-right: 7px;
+    transition: height 4s;
+}
+
+.rgdp__majelink-logo {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.rgdp__majelink-logo1 {
+    width: 30px;
+    height: 30px;
+    padding-right: 9px;
+}
+
+.rgdp__majelink-logo:hover {
+    cursor: pointer;
+}
+
+.rgdp__majelink-logo2 {
+    width: 30px;
+    height: 30px;
+    padding-right: 9px;
+}
+
+.legales {
+    width: 800px;
+    margin: auto;
+    display: grid;
+    gap: 80px;
+}
+
+.mentions-legales1 {
+    position: relative;
+    top: 180px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    background: whitesmoke;
+    box-shadow: rgba(24, 32, 79, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.5) 0px 0px 0px 0.5px inset;
+    border-radius: 10px;
+}
+
+
+.img-mention {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    background: linear-gradient(209.21deg, rgb(159, 127, 229) 13.57%,
+    rgb(78, 153, 227) 98.38%);
+    box-shadow: rgba(24, 32, 79, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.5) 0px 0px 0px 0.5px inset; 
+    margin: 40px 0 0 40px;
+}
+
+.titre-mention {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.detail-mention {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.detail-m {
+    margin: 0 40px 40px 40px;
+    text-align: justify;
+}
+
+.politique-rgpd {
+    position: relative;
+    top: 180px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    background: whitesmoke;
+    box-shadow: rgba(24, 32, 79, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.5) 0px 0px 0px 0.5px inset;
+    border-radius: 10px;
+}
+
+.img-politique {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    background: linear-gradient(209.21deg, rgb(75, 190, 255) 13.57%, rgb(33, 107, 218) 98.38%);
+    box-shadow: rgba(24, 32, 79, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.5) 0px 0px 0px 0.5px inset; 
+    margin: 40px 0 0 40px;
+}
+
+.titre-politique {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.version {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.detail-politique {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.detail-p {
+    margin: 0 40px 40px 40px;
+    text-align: justify;
+}
+
+.condition-vente {
+    position: relative;
+    top: 180px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    background: whitesmoke;
+    box-shadow: rgba(24, 32, 79, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.5) 0px 0px 0px 0.5px inset;
+    border-radius: 10px;
+}
+
+.img-condition {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    background: linear-gradient(209.21deg, rgb(238, 184, 109) 13.57%, rgb(153, 70, 178) 98.38%);
+    box-shadow: rgba(24, 32, 79, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.5) 0px 0px 0px 0.5px inset; 
+    margin: 40px 0 0 40px;
+}
+
+.titre-condition {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.detail-condition {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.detail-c {
+    margin: 0 40px 40px 40px;
+    text-align: justify;
+}
+
+/* FOOTER */
+
+.footer-container {
+    position: relative;
+    top: 140px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 2fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgb(30, 19, 87);
+    /* width: 100%; */
+    height: 350px;
+    margin-top: 150px;
+}
+
+/* ----------- FOOTER1 ---------- */
+
+.footer1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mjj-profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    /* letter-spacing: 1px; */
+    /* height: 50px; */
+}
+
+.mjj-avatar1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    /* margin: 40px 0 20px 0; */
+    /* margin-bottom: 15px; */
+}
+
+/* .carte-visite {
+    width: 400px;
+    height: 400px;
+} */
+
+.jj-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding-bottom: 7px;
+}
+
+.mjj-name {
+    font-style: normal;
+    font-size: 15px;
+    /* line-height: 18px; */
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 100;
+    margin: 17px 0 10px 0;
+}
+
+.founder {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: 100;
+    margin-bottom: 3px;
+}
+
+.lawyer {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: 100;
+    margin-bottom: 3px;
+}
+
+.passion {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: 100;
+    margin: 0;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    width: 60%;
+    letter-spacing: 0.5px;
+    margin-left: 70px;
+}
+
+.logo__majelink-2 {
+    width: 30px;
+    height: 30px; 
+    margin-top: 30px;
+    margin-bottom: 15px; 
+}
+
+
+
+/* .footer-prestation {
+    diplay: flex;
+}
+
+.footer-link {
+    diplay: flex;
+} */
+
+.footer-title__presta {
+    margin:0;
+    font-style: normal;
+    font-size: 15px;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: lighter;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.footer-title__presta:hover {
+    color: whitesmoke;
+}
+
+.menu-link2 {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 7px;
+    /* margin-top: 10px; */
+}
+.menu-link3 {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 7px; 
+}
+
+.footer-title__contact {
+    margin: 0;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: lighter;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.footer-title__contact:hover {
+    color: whitesmoke;
+}
+
+.footer-title__contact2 {
+    margin: 0;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: lighter;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.majelink-legal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* width: 75%; */
+    letter-spacing: 0.5px;
+    margin-left: 100px;
+}
+
+.doc {
+    width: 28px;
+    height: 30px;
+    margin-top: 35px;
+    /* margin-bottom: 15px; */
+}
+
+.mentions-legales {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 15px;
+    margin: 8px 0 8px 0;
+    /* line-height: 40px; */
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: lighter;
+    transition-property: color;
+    transition-duration: 0.3s;
+    /* padding-bottom: 10px; */
+}
+
+.mentions-legales:hover {
+    color: whitesmoke;
+}
+
+
+.politique-donnees {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 15px;
+    margin: 8px 0 18px 0;
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: lighter;
+    transition-property: color;
+    transition-duration: 0.3s;
+    /* padding-bottom: 10px; */
+}
+
+.politique-donnees:hover {
+    color: whitesmoke;
+}
+
+.cgv {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: lighter;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.cgv:hover {
+    color: whitesmoke;
+}
+
+.footer-reseaux {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    width: 20%;
+    margin-left: 40px;
+}
+
+.subscribe:hover {
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+.cover-subscrive {
+    background: linear-gradient(209.21deg, rgb(159, 127, 229) 13.57%, rgb(78, 153, 227) 98.38%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.circle-cover {
+    background: rgba(68, 66, 178, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset;
+    width: 40px;
+    height: 40px;
+    /* margin-top: 30px; */
+    border-radius: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.link-footer {
+    margin: 0;
+    padding: 0;
+}
+
+.circle-cover:hover {
+    transform: translateY(-3px);
+}
+
+.subscribe-logo {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+
+/* ----------- FIN FOOTER1 ---------- */
+
+/* FOOTER 2 */
+.footer2 {
+    position: relative;
+    bottom: -140px;
+    left: 0;
+    display: grid;
+    height: 70px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    background-color: rgb(35, 37, 74)
+}
+
+.website {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: lighter;
+    justify-content: end;
+    width: 42%;
+}
+
+.rights {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(184, 184, 197);
+    font-weight: lighter;
+    font-style: italic;
+    /* margin-right: 20px; */
+    width: 85%;
+}
+
+.love {
+    width: 15px;
+    height: 15px;
+    padding: 0 2px 0 2px;
+}
+
+/* FIN FOOTER 2 */
+
+/* ---------- MEDIA QUERIES */
+
+@media screen and (min-width: 1281px) {
+    .rights {
+        padding-right: 300px;
+    }
+}
